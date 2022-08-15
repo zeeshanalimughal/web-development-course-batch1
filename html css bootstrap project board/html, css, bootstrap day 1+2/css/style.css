@@ -1,0 +1,304 @@
+.btn__login {
+    background-color: aqua !important;
+}
+
+.box {
+    width     : 100%;
+    min-height: 100vh;
+    position  : relative;
+}
+
+main {
+    display: flex;
+    gap    : 3rem;
+    position: relative;
+
+}
+
+
+.menu{
+position: absolute;
+top: -18px;
+
+display: flex;
+justify-content:center;
+align-items:center;
+/* background-color:#363636; */
+color        : #363636;
+font-size: 30px;
+border-radius: 8px;
+display: none;
+cursor: pointer;
+}
+
+main aside {
+    max-width      : 22%;
+    min-width      : 290px;
+    background     : #242531;
+    color          : #fff;
+    border-radius  : 20px;
+    padding        : 2rem;
+    min-height     : 130vh;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    transition: all .5s;
+}
+
+
+aside .sidebar__top .title {
+    font-size    : 20px;
+    color        : #8C8D93;
+    margin-bottom: 20px;
+}
+
+aside .sidebar__top ul li {
+    color        : #b8b8b9;
+    margin-bottom: 15px;
+    display      : flex;
+    align-items  : center;
+    font-size: 17px;
+}
+
+aside .sidebar__top ul li i {
+    width        : 10px;
+    height       : 10px;
+    border-radius: 50%;
+    margin-right : 5px;
+}
+
+aside .sidebar__top ul li:nth-child(1) i {
+    background-color: #FFB658;
+}
+
+aside .sidebar__top ul li:nth-child(2) i {
+    background-color: #FF8158;
+}
+
+aside .sidebar__top ul li:nth-child(3) i {
+    background-color: #5098DE;
+}
+
+aside .sidebar__top ul li:nth-child(4) i {
+    background-color: #B058FF;
+}
+
+aside .sidebar__top ul li:nth-child(5) i {
+    background-color: #90C143;
+}
+
+aside .sidebar__top ul li:nth-child(6) i {
+    background-color: #FF589C;
+}
+
+
+aside .sidebar__bottom .title {
+    font-size    : 20px;
+    color        : #8C8D93;
+    margin-bottom: 20px;
+}
+
+aside .sidebar__bottom .sidebar__bottom__box {
+    width           : 100%;
+    padding         : 20px 15px;
+    border-radius   : 10px;
+    background-color: #3A3C53;
+}
+
+aside .sidebar__bottom .sidebar__bottom__box .title {
+    font-size    : 22px;
+    color        : #fff;
+    margin-bottom: 15px;
+}
+
+aside .sidebar__bottom .sidebar__bottom__box .desc {
+    font-size    : 16px;
+    color        : #BEBEC6;
+    margin-bottom: 15px;
+}
+
+
+main .projects__section {
+    padding : 1.5rem 1.5rem 1.5rem 0;
+    position: relative; 
+    flex: 1;
+
+
+}
+
+main .projects__section .title {
+    font-size    : 22px;
+    font-weight  : 400;
+    color        : #363636;
+    margin-bottom: 1.5rem;
+
+}
+
+main .projects__section .projects {
+    display  : flex;
+    gap      : 2rem;
+    flex-wrap: wrap;
+}
+
+main .projects__section .projects .project {
+    min-width: 180px;
+    max-width: 18%;
+    width    :100%;
+}
+
+main .projects__section .projects .project .project__card {
+    width          : 100%;
+    height         : 22vh;
+    border-radius  : 20px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    color          : #fff;
+    font-size      : 3rem;
+    font-weight    : 700;
+}
+
+main .projects__section .projects .project:nth-child(1) .project__card {
+    background-color: #58AEFF;
+    box-shadow      : 0 12px 20px #58AEFF;
+}
+
+main .projects__section .projects .project:nth-child(2) .project__card {
+    background-color: #FF8158;
+    box-shadow      : 0 12px 20px #FF8158;
+}
+
+main .projects__section .projects .project:nth-child(3) .project__card {
+    background-color: #FFB658;
+    box-shadow      : 0 12px 20px #FFB658;
+}
+
+main .projects__section .projects .project:nth-child(4) .project__card {
+    background-color: #B058FF;
+    box-shadow      : 0 12px 20px #B058FF;
+}
+
+main .projects__section .projects .project:nth-child(5) .project__card {
+    background-color: #fff;
+    border          : 2px solid #B0B4DB;
+    color           : #B0B4DB;
+}
+
+
+main .projects__section .projects .project .project__title {
+    text-align: center;
+    font-size : 14px;
+    margin-top: 10px;
+}
+
+
+
+
+main .projects__section footer {
+    position   : absolute;
+    bottom     : 0rem;
+    right      : 2rem;
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+}
+
+main .projects__section footer .label {
+    font-size: 15px;
+    color    : #363636;
+}
+
+main .projects__section footer ion-icon {
+    font-size: 1.7rem;
+    color    : #363636;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+
+@media (max-width:1070px) {
+    main .projects__section .projects .project {
+        min-width: 45%;
+        max-width: 18%;
+        width    :100%;
+    }
+    
+
+}
+@media (max-width:840px) {
+
+
+
+    main aside{
+        position: absolute;
+        z-index: 1;
+        top: 1.5rem;
+        left: -600px;
+        border-radius: 0 20px 20px 0;
+    }
+    main aside.active{
+        left: -50px !important;
+    }
+    /* main aside.active ~main .menu{
+        top: 40px;
+        left:220px;
+        color        : #fff;
+        z-index: 10;
+    } */
+    .menu{
+        display: flex;
+        left:calc(100% - 3rem);
+        top: 20px;
+        z-index: 100;
+        }
+}
+
+
+
+@media (max-width:600px) {
+    main .projects__section .projects .project {
+        min-width: 100%;
+        max-width: 100%;
+        width    :100%;
+    }
+    main {
+        display: flex;
+        gap    : 1.5rem;
+        position: relative;
+    
+    }
+    main .projects__section footer {
+       
+        bottom     : -2rem;
+        right      : auto;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    main .projects__section .projects .project .project__title {
+        font-size : 17px;
+        margin-top: 20px;
+    }
+    main .projects__section {
+        padding: 0;
+    padding-top: 2rem;
+    }
+    main aside.active{
+        left: -20px !important;
+    }
+    .menu{
+        top: -20px;
+        }
+}

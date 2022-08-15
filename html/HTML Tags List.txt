@@ -1,0 +1,57 @@
+i
+b
+br
+hr
+s
+del
+ins
+sup
+sub
+strong
+small
+em
+abbr & title
+q
+label
+mark
+center
+kbd
+meter
+pre
+time
+fieldset & legend
+details & summery
+style
+link
+a
+
+
+Day-3
+img
+meta
+table
+thead
+tbody
+tfoot
+th
+tr	
+td
+
+
+ul
+ol
+li
+iframe
+sementic elements (nav,header,aside,section,main,footer,article)
+non-sementic elements (div,span)
+class & id
+contenteditable attribute
+
+
+
+form tag
+form elements
+form attributes (action,method,id&form,enctype)
+input types (text,email,password,radio,checkbox,number,date,time,week,month,image,file,color,submit,button,reset,search,hidden,url)
+input attributes (type, value, required, readonly, placeholder,autofocus,autocomplete, multiple, list)
+for-id

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap day 1</title>
+</head>
+
+<body class="p-3 p-sm-5 ">
+
+  <nav class="d-flex justify-content-between align-items-center">
+    <ul class="d-flex align-items-center list-unstyled">
+      <li class="me-3 me-sm-5 "><a class="text-decoration-none text-dark" href="#">Home</a></li>
+      <li class="me-3 me-sm-5 "><a class="text-decoration-none text-dark" style="font-weight: 500;" href="#">Projects</a></li>
+      <li class="me-3 me-sm-5 "><a class="text-decoration-none text-dark" href="#">Inbox</a></li>
+      <li class="me-3 me-sm-5 "><a class="text-decoration-none text-dark" href="#">Teams</a></li>
+    </ul>
+
+    <div class="right__nav d-none d-md-flex">
+      <button class="btn btn-outline-dark rounded-pill px-4">Upgrade</button>
+      <img src="download.jpg" width="50" height="50" class="ms-3 rounded-circle" style="object-fit: cover;" alt="">
+    </div>
+  </nav>
+
+
+  <main>
+
+    <span class="menu">
+
+      <ion-icon name="menu-outline"></ion-icon>
+    </span>
+
+    <aside >
+
+      <div class="sidebar__top">
+        <h3 class="title">PROJECTS</h3>
+        <ul class="p-0 m-0 list-unstyled">
+          <li><i></i>broadme development</li>
+          <li><i></i>Feature lists</li>
+          <li><i></i>Marketing</li>
+          <li><i></i>UIDD development</li>
+          <li><i></i>Topics</li>
+          <li><i></i>Bug and fixes</li>
+        </ul>
+        <a class="text-decoration-none" href="#">View all ></a>
+      </div>
+
+      <div class="sidebar__bottom">
+        <h3 class="title">TEAMS</h3>
+
+        <div class="sidebar__bottom__box">
+          <h3 class="title">
+            Need to form a team ?
+          </h3>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, omnis.
+          </p>
+          <button class="btn bg-white border px-5 text-dark rounded-3">Try it free</button>
+        </div>
+
+      </div>
+
+
+    </aside>
+
+
+    <section class="projects__section">
+      <h3 class="title">
+        Projects
+      </h3>
+
+      <div class="projects">
+        <div class="project">
+          <div class="project__card">
+            M
+          </div>
+          <h4 class="project__title">
+            Marketing
+          </h4>
+        </div>
+        <div class="project">
+          <div class="project__card">
+            FI
+          </div>
+          <h4 class="project__title">
+            Feature lists
+          </h4>
+        </div>
+        <div class="project">
+          <div class="project__card">
+            bd
+          </div>
+          <h4 class="project__title">
+            boardme<br>development
+          </h4>
+        </div>
+        <div class="project">
+          <div class="project__card">
+            Ud
+          </div>
+          <h4 class="project__title">
+            UIDD development
+          </h4>
+        </div>
+        <div class="project">
+          <div class="project__card">
+            +
+          </div>
+          <h4 class="project__title">
+            UIDD development
+          </h4>
+        </div>
+      </div>
+
+      </div>
+
+
+
+      <footer>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        <div class="label">
+          Privacy
+        </div>
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </footer>
+    </section>
+
+
+  </main>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    var menu = document.querySelector(".menu").addEventListener("click",function(){
+      document.querySelector("aside").classList.toggle("active");
+    })
+  </script>
+</body>
+
+</html>

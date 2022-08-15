@@ -1,0 +1,125 @@
+Functions (simple, with parameters, with return, callback)
+
+Numbers (isNaN, isFinite, isInteger, toFixed , toLocaleString, toString)
+
+String Functions 
+
+->1         length	                    Returns the length of a string
+
+->2         charAt	                    Returns the character at a specified index (position)
+
+->3         charCodeAt	                Returns the Unicode of the character at a specified index
+
+->4         concat	                    Returns two or more joined strings
+
+->5         includes	                Returns if a string contains a specified value
+
+->6         indexOf	                    Returns the index (position) of the first occurrence of a value in a string
+
+->7         lastIndexOf	                Returns the index (position) of the last occurrence of a value in a string
+
+->8         repeat	                    Returns a new string with a number of copies of a string
+
+->9         replace	                    Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+
+->10        search	                    Searches a string for a value, or regular expression, and returns the index (position) of the match
+
+->11        slice	                    Extracts a part of a string and returns a new string
+
+->12        split	                    Splits a string into an array of substrings
+
+->13        endsWith	                Returns if a string ends with a specified value
+
+->14        startsWith	                Checks whether a string begins with specified characters
+
+->15        substr	                    Extracts a number of characters from a string, from a start index (position)
+
+->16        substring	                Extracts characters from a string, between two specified indices (positions)
+
+->17        toLocaleLowerCase	        Returns a string converted to lowercase letters, using the host's locale
+
+->18        toLocaleUpperCase	        Returns a string converted to uppercase letters, using the host's locale
+
+->19        toLowerCase	                Returns a string converted to lowercase letters
+
+->20        toUpperCase	                Returns a string converted to uppercase letters
+
+->21        toString	                Returns a string or a string object as a string
+
+->22        trim	                    Returns a string with removed whitespaces
+
+
+
+
+
+Type Conversion
+
+Instance Of
+
+String literals
+
+Arrays (single dimention, multidimention)
+
+Array Methods:
+
+->1    length	             Sets or returns the number of elements in an array
+
+->2    concat	             Joins arrays and returns an array with the joined arrays
+
+->3    forEach	             Calls a function for each array element
+
+->4    indexOf	             Search the array for an element and returns its position
+
+->5    lastIndexOf	         Search the array for an element, starting at the end, and returns its position
+
+->6    findIndex	         Returns the index of the first element in an array that pass a test
+
+->7    find	                 Returns the value of the first element in an array that pass a test
+
+->8    some	                 Checks if any of the elements in an array pass a test
+
+->9    every	             Checks if every element in an array pass a test
+
+->10    fill	             Fill the elements in an array with a static value
+
+->11    includes	         Check if an array contains the specified element
+
+->12    isArray	             Checks whether an object is an array
+
+->13    join	             Joins all elements of an array into a string
+
+->14    entries	             Returns a key / value pair Array Iteration Object
+
+->15    reverse	             Reverses the order of the elements in an array
+
+->16    keys	             Returns a Array Iteration Object, containing the keys of the original array
+
+->17    pop	                 Removes the last element of an array, and returns that element
+
+->18    push	             Adds new elements to the end of an array, and returns the new length
+
+->19    shift	             Removes the first element of an array, and returns that element
+
+->20    unshift	             Adds new elements to the beginning of an array, and returns the new length
+
+->21    slice	             Selects a part of an array, and returns the new array
+
+->22    splice	             Adds / Removes elements from an array
+
+->23    sort	             Sorts the elements of an array
+
+->24    toString	         Converts an array to a string, and returns the result
+
+->25    map	                 Creates a new array with the result of calling a function for each array element
+
+->26    filter	             Creates a new array with every element in an array that pass a test
+
+->27    reduce	             Reduce the values of an array to a single value(going left - to - right)
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+.btn__login{
+    background-color: aqua !important;
+}
+
+.box{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.carousel-inner .carousel-item{
+    width:100%;
+    min-height:100vh;
+    position: relative;
+    background-color:red;
+}
+.carousel-inner .carousel-item img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}

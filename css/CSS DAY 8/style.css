@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* .container{
+    width:100%;
+    min-height:100vh;
+    display:flex;    
+} */
+
+
+
+.container{
+    width:100%;
+
+
+    /* min-height:calc(100vh / 2); */
+    /* min-height:calc(100vh + 20vh); */
+    /* min-height:calc(100vh - 200px); */
+    /* min-height:calc(100vh / 2); */
+
+
+    /* background-image: linear-gradient(125deg,rgba(20, 5, 155, 1) 50% ,transparent 50%), url('corporate-business-handshake-partners.jpg');   */
+    background-image: linear-gradient(125deg,rgba(20, 5, 155, 1) 50% ,rgba(0,0,0,0.1) 50%), url('corporate-business-handshake-partners.jpg');  
+    background-repeat: no-repeat;  
+    background-size:cover;
+}
+
+
+
+/* .container > p{
+    color: #fff;
+    font-size: 2rem;
+} */
+
+/* .container + p{
+    color: red;
+    font-size: 2rem;
+} */
+
+.container ~ p{
+    color: red;
+    font-size: 2rem;
+}
+
+
+
+.box{
+
+    width:200px;
+    height:200px;
+    /* background:linear-gradient(rgb(154, 5, 57),rgb(219, 7, 95)); */
+    box-shadow: 0 0 30px #9a0539c0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 4rem;
+    color: #fff;
+    zoom: 300%;
+    position: relative;
+}
+
+.box >div{
+    width: 200px;
+    height:100px;
+    position: absolute;
+}
+.box >div:nth-child(1){
+    background-color: green;
+    z-index: 3;
+    transform: translateX(30px) translateY(40px);
+}
+.box >div:nth-child(2){
+    background-color: yellow;
+    /* z-index: 2; */
+    transform: translateX(50px) translateY(80px);
+    z-index: 2;
+}
+.box >div:nth-child(3){
+    background-color: red;
+    transform: translate(90px);
+    z-index: -1;
+}

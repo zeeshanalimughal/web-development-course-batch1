@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+<body>
+    
+    <form action="https://jsonplaceholder.typicode.com/users" method="post" enctype="multipart/form-data">
+        <input type="text" required placeholder="Enter your name" autofocus autocomplete="off"><br>
+        <input type="email" value="example@example.com" required readonly><br>
+        <input type="password"><br>
+        <p>Gender</p>
+        <input type="radio" name="gender" checked value="male"><br>
+        <input type="radio" name="gender" value="female"><br>
+        <br>
+        <input type="checkbox" checked name="data[]" value="A"><br> 
+        <input type="checkbox" name="data[]" value="B"><br> 
+        <input type="checkbox" name="data[]" value="c"><br> <br>
+
+        <input type="number" ><br>
+        <input type="search" ><br>
+        <input type="url" required><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="week"><br>
+        <input type="month"><br>
+        <input type="color"><br>
+        <input type="reset" value="Reset Form"><br>
+        <input type="file" multiple><br>
+
+
+        <input type="hidden"><br>
+
+
+        <input type="button" value="Save New Form" disabled><br>
+        <input type="submit" value="Save Form" ><br>
+        <button type="submit">Update Form</button>
+
+        <select name="select_country" multiple>
+            <option value="1">Pakistan</option>
+            <option value="2">USA</option>
+            <option value="3">India</option>
+        </select>
+
+        <input list="select">
+        <datalist  id="select">
+            <option>ABC</option>
+            <option>BCD</option>
+            <option>CDE</option>
+        </datalist>
+
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember Password</label>
+
+        <br>
+        <br>
+
+        <textarea style="width:100%" rows="4"></textarea>
+
+    </form>
+
+
+    <!-- <video width="300" height="300"  loop autoplay="true" muted>
+        <source src="3D Rubik's Cube With Html Css and Js.mp4">
+    </video> -->
+
+    <!-- <video width="300" height="300" controls loop autoplay="true" muted>
+        <source src="3D Rubik's Cube With Html Css and Js.mp4">
+    </video> -->
+    <br>
+    &copy;
+    &reg;
+    &lt;
+    &gt;
+    &euro;
+    &euro;
+    &#128514;
+    <br>
+    <br>
+</body>
+</html>

@@ -1,0 +1,14 @@
+variables
+data types (string, number, boolean, array, object, null, undefined)
+Arithmetic operators (+,-,*,/,**,++,--)
+Assignment operators (=,+=,-=,*=,/=,%=,**=)
+Comparison Operators (==,===,!=,!==,>,<,>=,<=)
+If Else
+Logical Operators (&&, ||, !)
+Conditional Operators (?,:)
+Switch Statements
+Window Popups (alert, confirm, prompt)
+Loops(for,while,do while)
+Break & Continue
+comments (single line, multi line)
+

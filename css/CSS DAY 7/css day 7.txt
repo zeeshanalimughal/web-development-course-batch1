@@ -1,0 +1,74 @@
+1: position(fixed,sticky)
+2: border((style,width,color),  dotted, dashed,solid,double,grove,inset,outset,none)
+3: min/max width & height
+4: overflow
+5: text-justify & text-align,
+6: float
+7: css sudo classes
+(
+:hover,
+:valid,
+:focus,
+:active,
+:required,
+:root,
+:first-child,
+:last-child,
+:nth-child(n),
+:first-of-type,
+:last-of-type,
+:nth-of-type(n),
+:not,
+:disabled,
+:enabled,
+:checked,
+:in-range,
+
+css sudo elements
+
+::first-letter,
+::first-line,
+::selection,
+::placeholder,
+::before,
+::after
+)
+8: tables styling (border-collapse)
+9: border-box & content-box
+
+
+10: Image Design (reflection)
+11: Transition (property, dely, duration, timing-function)
+12: Transforms(translate,scale,rotate,skew, perspective, transform-style, transform-origin)
+13: Filter (blur, drop-shadow, grayscale, huerotate,brightness,contrast,opacity,saturate,sepia,invert)
+14: Animation (name,duration,delay,iteration-count,timing-function,duration,direction,fill-mode)
+
+
+
+
+
+
+
+
+
+
+15: Flex Box
+Parent container propertise
+{
+-> display (flex)
+-> jsutify-content (flex-start | flex-end | center | space-between | space-around | space-evenly )
+-> align-items (stretch | flex-start | flex-end | center | start | end )
+-> flex-direction (row | row-reverse | column | column-reverse;),
+-> flex-wrap (nowrap | wrap | wrap-reverse;)
+-> align-content (flex-start | flex-end | center | space-between | space-around | space-evenly | stretch )
+-> gap (gap | row-gap | column-gap)
+}
+
+child items properties
+{
+-> order (1,2 ...,)
+-> flex-grow (1,2 ...)
+-> flex-shrink (1,2,...)
+-> flex (1,2 ... px,rem,)
+-> align-self (auto, flex-start, flex-end, center)
+}

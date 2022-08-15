@@ -1,0 +1,12 @@
+color
+background
+width
+height
+padding
+margin
+text(align, last align,decuration,transform,spacing,lineheight,shadow)
+font(size,style,family)
+outline(style,color,width)
+links & cursors
+lists(styletype,image,position)
+border-radius

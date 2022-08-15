@@ -1,0 +1,140 @@
+Arrays (single dimention, multidimention)
+
+Array Methods:
+
+->1    length	             Sets or returns the number of elements in an array
+
+->2    concat	             Joins arrays and returns an array with the joined arrays
+
+->3    forEach	             Calls a function for each array element
+
+->4    indexOf	             Search the array for an element and returns its position
+
+->5    lastIndexOf	         Search the array for an element, starting at the end, and returns its position
+
+->6    findIndex	         Returns the index of the first element in an array that pass a test
+
+->7    find	                 Returns the value of the first element in an array that pass a test
+
+->8    some	                 Checks if any of the elements in an array pass a test
+
+->9    every	             Checks if every element in an array pass a test
+
+->10    fill	             Fill the elements in an array with a static value
+
+->11    includes	         Check if an array contains the specified element
+
+->12    isArray	             Checks whether an object is an array
+
+->13    join	             Joins all elements of an array into a string
+
+->14    entries	             Returns a key / value pair Array Iteration Object
+
+->15    reverse	             Reverses the order of the elements in an array
+
+->16    keys	             Returns a Array Iteration Object, containing the keys of the original array
+
+->17    pop	                 Removes the last element of an array, and returns that element
+
+->18    push	             Adds new elements to the end of an array, and returns the new length
+
+->19    shift	             Removes the first element of an array, and returns that element
+
+->20    unshift	             Adds new elements to the beginning of an array, and returns the new length
+
+->21    slice	             Selects a part of an array, and returns the new array
+
+->22    splice	             Adds / Removes elements from an array
+
+->23    sort	             Sorts the elements of an array
+
+->24    toString	         Converts an array to a string, and returns the result
+
+->25    map	                 Creates a new array with the result of calling a function for each array element
+
+->26    filter	             Creates a new array with every element in an array that pass a test
+
+->27    reduce	             Reduce the values of an array to a single value(going left - to - right)
+
+for in loop
+for of loop
+
+
+
+
+Js Objects
+
+A javaScript object is an entity having state and behavior (properties and method).
+For example: car, pen, bike, chair, glass, keyboard, monitor etc.
+Objects are variables too. But objects can contain many values.
+
+
+There are 3 ways to create objects.
+
+By object literal
+By creating instance of Object directly (using new keyword)
+By using an object constructor (using new keyword)
+
+The Difference Between Arrays and Objects
+    In JavaScript, arrays use numbered indexes.  
+    In JavaScript, objects use named indexes.
+
+
+
+Object.entries()              This method returns an array with arrays of the key, value pairs.
+Object.values()               This method returns an array of values.
+Object.keys()                 This method returns an array of a given object's own property names.
+Object.assign()               This method is used to copy enumerable and own properties from a source object to a target object
+Object.freeze()               This method prevents existing properties from being removed.
+
+
+
+
+Js Math Functions:
+
+abs	                It returns the absolute value of the given number.
+cbrt	            It returns the cube root of the given number.
+ceil	            It returns a smallest integer value, greater than or equal to the given number.
+floor	            It returns largest integer value, lower than or equal to the given number.
+log	                It returns natural logarithm of a number.
+max	                It returns maximum value of the given numbers.
+min	                It returns minimum value of the given numbers.
+pow	                It returns value of base to the power of exponent.
+random              It returns random number between 0 (inclusive) and 1 (exclusive).
+round	            It returns closest integer value of the given number.
+sqrt	            It returns the square root of the given number
+trunc	            It returns an integer part of the given number.
+
+
+
+
+Js Date Functions:
+
+getDate()               	    It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of local time.
+getDay()                	    It returns the integer value between 0 and 6 that represents the day of the week on the basis of local time.
+getFullYears()              	It returns the integer value that represents the year on the basis of local time.
+getHours()              	    It returns the integer value between 0 and 23 that represents the hours on the basis of local time.
+getMilliseconds()               It returns the integer value between 0 and 999 that represents the milliseconds on the basis of local time.
+getMinutes()                	It returns the integer value between 0 and 59 that represents the minutes on the basis of local time.
+getMonth()              	    It returns the integer value between 0 and 11 that represents the month on the basis of local time.
+getSeconds()                	It returns the integer value between 0 and 60 that represents the seconds on the basis of local time.
+
+
+setDate()               	    It sets the day value for the specified date on the basis of local time.
+setDay()                	    It sets the particular day of the week on the basis of local time.
+setHours()              	    It sets the hour value for the specified date on the basis of local time.
+setMilliseconds()               It sets the millisecond value for the specified date on the basis of local time.
+setMinutes()                	It sets the minute value for the specified date on the basis of local time.
+setMonth()              	    It sets the month value for the specified date on the basis of local time.
+setSeconds()                	It sets the second value for the specified date on the basis of local time.
+
+
+toDateString()              	It returns the date portion of a Date object.
+toTimeString()              	It returns the time portion of a Date object.
+toUTCString()               	It converts the specified date in the form of string using UTC time zone.
+
+
+
+Variable scope:
+This keyword:
+Js arrow function:

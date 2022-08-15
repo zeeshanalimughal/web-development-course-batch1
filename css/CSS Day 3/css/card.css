@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+   margin : 0;
+   padding: 0;
+}
+
+.container{
+   width: 100%;
+   height:100vh;
+   background:linear-gradient(to top right, #FF570E,#FEC200);
+   position: relative;
+}
+.card{
+   width: 80%;
+   height:80vh;
+   background-color: #fff;
+   position:absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 20px;
+   box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+.content{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   /* background-color: #FEC200; */
+}
+.content .heading{
+   font-size: 8rem;
+   font-family: 'Dancing Script', cursive;
+   font-weight: 200;
+   color: #FF1C49;
+   text-shadow: 0 0  5px #fff,0 0 10px #000;
+   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.subtitle{
+   font-size: 1.6rem;
+   color: #858585;
+   margin-top: 2rem;
+   text-align: center;
+   font-family: sans-serif;
+}
+.btns{
+   margin-top: 5rem;
+   text-align: center;
+}
+.btns button{
+   padding:1.2rem 0;
+   background-color: #FEC200;
+   border-radius: 30px;
+   width: 240px;
+   outline: none;
+   border: none;
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: #fff;
+   box-shadow: 0 0 30px #FEC200;
+   cursor: pointer;
+}
+.btns .btn2{
+   background: #D8D8D8;
+   box-shadow: 0 0 30px #D8D8D8;
+margin-left: 15px;
+}

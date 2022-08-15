@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-background:#b9c20d;
+}
+
+
+/* section{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(136, 244, 129);
+    padding:4rem;
+}
+section.sec2{
+    background-color: rgb(244, 129, 231);
+}
+section.sec1{
+    height: 3vh;
+
+} */
+/* .floating{
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    background-color:rgb(177, 171, 237);
+    position:fixed;
+    bottom:30px;
+    right: 30px;
+    box-shadow: 5px 10px 20px #00000033;
+    cursor: pointer;
+} */
+
+/* .stickey{
+    width:100%;
+    padding:20px 40px;
+    background-color:#111;
+    position:sticky;
+    top: 0px;
+    left: 0;
+} */
+
+
+
+
+
+
+h3{
+    /* border-width: 5px; */
+    /* border-color: green; */
+    /* border-style:solid */
+    /* border-style:dotted; */
+    /* border-style:dashed; */
+    /* border-style:double; */
+    /* border-style:groove; */
+    /* border-style:inset; */
+    /* border-style:outset;
+    border-style:none; */
+
+    border:5px solid red;
+    display: inline-block;
+}
+
+
+
+
+
+.box{
+    /* max-width:100px; */
+    /* min-width:100px;
+    width:50%; */
+    /* min-height:50px;
+    max-height:20px; */
+    /* height:100%;
+    background-color:aqua; */
+}
+.box{
+    width:32%;
+    height:400px;
+    background-color:aqua;
+    margin: 10px;
+    /* float:left; */
+    /* float:right; */
+    /* text-justify: justify;
+    text-align: justify; */
+    /* overflow:hidden; */
+    /* overflow:scroll; */
+    /* overflow-y:scroll; */
+    /* overflow:auto; */
+}
+
+
+button{
+    width:300px;
+    height:70px;
+    outline:none;
+    border: none;
+    background-color:#111;
+    color:#fff;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color:rgb(9, 188, 198);
+}
+
+button:active{
+    background-color:rgb(198, 9, 94);
+}
+
+/* 
+input:valid{
+    background-color:green;
+} */
+
+
+
+
+/* 
+input{
+  outline:none;
+  border: 1px solid #111 !important;
+}
+input:focus{
+   border: 2px solid red !important;
+} */
+
+
+/* input:required{
+    background-color:red;
+} */
+
+
+input:required{
+    background-color:var(--primary-background);
+}
+
+
+
+
+/* ul li:first-child{
+    color:green ;
+}
+
+ul li:last-child{
+    color:green ;
+} */
+/* ul li:hover{
+    background-color:var(--primary-background)
+} */
+
+/* ul li:nth-child(5){
+    color:green ;
+    background-color:#11eee1;
+} */
+
+/* 
+ul li:nth-child(even){
+    color:green ;
+    background-color:#11eee1;
+} */
+
+ul li:nth-child(odd){
+    color:green ;
+    background-color:#11eee1;
+}
+
+
+ul li::selection{
+    background-color: #111;
+    color:white;
+}

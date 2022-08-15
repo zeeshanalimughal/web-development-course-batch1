@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    
+    /* justify-content:space-between; */
+    /* justify-content:space-between; */
+    /* justify-content:space-around; */
+    /* justify-content:flex-end; */
+    /* justify-content:flex-start; */
+    justify-content:center;
+
+    /* align-items: stretch; */
+    align-items:center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: start; */
+    /* align-items: end; */
+
+
+
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+
+
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: nowrap; */
+
+
+
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    /* align-content: stretch; */
+
+
+    /* row-gap: 20px; */
+    /* column-gap: 20px; */
+    gap: 20px;
+    
+    /* width: 350px;
+    height: 100px; */
+}
+
+
+/* 
+.box:nth-child(1){
+    order: 2;
+}
+.box:nth-child(2){
+    order: 1;
+}
+.box:nth-child(3){
+    order: 3;
+} */
+
+
+
+/* .box:nth-child(3n+1){
+    flex-grow: 1;
+}
+ */
+
+
+/* .box:nth-of-type(1){
+    flex-shrink:2;
+} */
+
+
+
+/* .box:nth-child(1){
+    flex: 4;
+} */
+
+
+
+/* .box:nth-child(1){
+    flex: 2;
+} */
+
+
+
+
+
+
+
+.box{
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px; */
+
+    width:200px;
+    height:200px;
+    background:linear-gradient(rgb(154, 5, 57),rgb(219, 7, 95));
+    box-shadow: 0 0 30px #9a0539c0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 4rem;
+    color: #fff;
+
+
+    flex: 1;
+
+
+}
+
+
+
+.box:nth-child(2n+1){
+    align-self:flex-end ;
+}
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    background-color:#111111;
+    padding:15px 30px;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: sans-serif;
+    /* flex: 2; */
+    /* background-color:red; */
+}
+ul{
+    color: #fff;
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    /* margin-left: 5rem; */
+}
+ul li{
+    list-style: none;
+    font-size: 24px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-right: 40px;
+}
+ul li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+.progress_container{
+    width: 600px;
+    /* width: 100%; */
+    height: 400px;
+    background-color: #111;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding: 3rem;
+}
+
+
+.progress{
+    width:100%;
+    margin-bottom: 3rem;
+    
+}
+
+.progress .title{
+   color: #fff;
+   font-size: 1.5rem;
+   font-family: sans-serif;
+   margin-bottom: 18px;
+
+}
+
+.progress .bar{
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress .bar::before{
+    content: "";
+    position: absolute;
+    width:30%;
+    height:100%;
+    border-radius: 30px;
+
+}
+
+.progress .bar1::before{
+    width:60%;
+    background: linear-gradient(to right, rgb(24, 2, 75),rgb(153, 4, 167));
+}
+
+.progress .bar2::before{
+    width:90%;
+    background: linear-gradient(to right, rgb(24, 2, 75),rgb(153, 4, 167));
+}
+
+.progress .bar3::before{
+    width:70%;
+    background: linear-gradient(to right, rgb(24, 2, 75),rgb(153, 4, 167));
+}
+

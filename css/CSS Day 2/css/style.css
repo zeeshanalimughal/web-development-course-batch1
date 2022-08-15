@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+  margin: 0;  
+  padding: 0;
+}
+.box{
+    width:50rem;
+    height:30rem;
+    background-color: #222;
+    margin-top: 5rem;
+    margin-left: 18rem;
+    padding: 2rem;
+    outline-width: 20px;
+    /* cursor: pointer; */
+    /* cursor: e-resize; */
+    /* cursor: grab; */
+    /* cursor: move; */
+    /* cursor: copy; */
+
+    /* outline-style: solid; */
+    /* outline-style: dotted; */
+    /* outline-color: red; */
+    /* outline: none; */
+
+    /* border-radius: 20px; */
+    /* border-radius: 100px 10px 100px 10px ; */
+    /* overflow: hidden; */
+    /* border-radius: 50% ; */
+}
+ .box p{
+    color: #fff;
+    font-size:32px;
+    /* font-style: italic; */
+    /* font-style: oblique; */
+    /* font-weight: 200; */
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+    /* letter-spacing: 5px; */
+    /* letter-spacing: -5px; */
+    /* word-spacing: 15px; */
+    /* word-spacing: -15px; */
+    /* line-height:60px */
+    /* line-height:1.2 */
+    text-shadow: 3px 3px 5px rgba(203, 233, 4,1) ,
+    5px 5px 5px rgba(203, 233, 4,.8) ,
+    7px 7px 7px rgba(203, 233, 4,.5) ,
+    8px 8px 9px rgba(203, 233, 4,.2) ;
+    opacity: 1;
+/* font-family: sans-serif; */
+font-family: 'Dancing Script', cursive;
+ }
+ .box p a{
+    text-decoration:overline;
+    text-decoration:line-through;
+    text-decoration:underline;
+
+ }
+ .box p a:visited{
+    color: green;
+  }
+ .box p a{
+   text-decoration: none;
+   color: red;
+ }
+
+ .box p a:active{
+   color: rgb(237, 233, 10);
+ }
+
+ ul{
+    margin-top: 20px;
+ }
+
+ ul li{
+    color: #fff;
+    font-size: 2rem;
+    list-style-type: square;
+    list-style-position: inside;
+    /* list-style-image: url(https://w7.pngwing.com/pngs/455/184/png-transparent-brown-ring-circle-icon-painted-orange-circle-watercolor-painting-angle-ink.png); */
+ }
