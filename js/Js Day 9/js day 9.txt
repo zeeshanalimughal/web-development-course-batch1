@@ -1,0 +1,56 @@
+
+parentNode & parentElement 
+childNodes & Children
+firstChild
+lastChild
+nextSibling
+previousSibling
+appendChild
+prepend
+remove
+removeChild
+replaceChild
+insertAdjacentElement (afterbegin, afterend, beforebegin, beforeend)
+
+scrollWidth
+scrollHeight
+scrollTop
+scrollLeft
+scrollIntoView
+
+offsetWidth 
+offsetHeight
+offsetLeft
+offsetTop
+clientWidth
+clientHeight
+clientTop
+clientLeft
+clientX
+clienty
+
+
+Window Properties and Methods:
+console
+document
+innerHeight
+innerWidth
+outerHeight
+outerWidth
+screenLeft
+screenTop
+scrollX
+scrollY
+navigator (appCodeName,appName,appVersion,language,onLine,platform,userAgent)
+
+Window Web API's:
+
+Location (host,hostname,origin,pathname,port,protocol , assign(), reload(), replace())
+History(length)
+
+Storage:
+Types -> (localStorage, sessionStorage)
+Methods-> (setItem, getItem, length, key, removeItme, clear)
+
+Geolocation (coordinates, position, getCurrentPosition())
+
