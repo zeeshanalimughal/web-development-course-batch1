@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(45deg, #C51162, #F50057);
+        }
+
+        .card {
+            max-width: 550px;
+            width: 100%;
+            padding: 0 3rem;
+            min-height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .question,
+        .principle {
+            font-size: 25px;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #C51162, #F50057);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            background: linear-gradient(45deg, #C51162, #F50057);
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            margin-top: 2rem;
+            border-radius: 40px;
+            box-shadow: 10px 15px 20px #C5116266;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2 class="question">
+        </h2>
+        <h3 class="principle">
+        </h3>
+        <button onclick="getJoke()">Next</button>
+    </div>
+
+
+    <script>
+
+        const API_URL = 'https://backend-omega-seven.vercel.app/api/getjoke';
+        const question = document.querySelector(".question")
+        const principle = document.querySelector(".principle")
+
+        async function getJoke() {
+            try {
+                principle.innerHTML=""
+                question.innerHTML = "Fetching joke ..."
+                const response = await fetch(API_URL)
+                const joke = await response.json()
+                console.log(joke[0].question)
+                question.innerHTML = joke[0].question
+                principle.innerHTML = joke[0].punchline
+                
+            } catch (e) {
+                console.log("Some error occurred: " + e)
+            }
+        }
+        getJoke()
+
+    </script>
+</body>
+
+</html>

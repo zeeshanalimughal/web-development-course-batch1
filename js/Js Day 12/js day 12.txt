@@ -1,0 +1,54 @@
+Spread (Merge arrays, clone arrays, min-max value of array, Set to array)
+Rest Operator (passed in functions and combine multiple arguments of function to an array)
+Destructuring
+
+
+Synchronous: 
+		As the name suggests synchronous means to be in a sequence, statements are executed one at a time in the order in which they appear.
+		Each statement waits for the previous to finish. also known as blocking.
+		i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement 
+		to get executed.
+Asynchronous: 
+		Asynchronous code allows the program to be executed immediately where the synchronous code 
+		will block further execution of the remaining code until it finishes the current one.
+		Code that runs asynchronously allows a user to fetch data from the serve, executed a function with 
+		dely and deal with multiple requests at a time.
+
+		JS is a single threaded programming language. This means that js engine will only process one statement 
+		at a time on a single thread it is what make js synchronous.
+
+		But why need asynchronous javascript?
+		Synchronous Js is problematic by nature. because in our web apps we don't want to wait entire seconds 
+		for something to happen until we can do something else in our code. o this nature of js block the
+		further execution of the code untill the previous process is not completed.
+		This is where asynchronious js comes into play. Allowing us to not block the main thread.
+
+Promises:
+
+	A promise is a javascript object that links producing code and consuming code. It is used to find asynchronous
+	operation is successfully completed or not.
+
+	I t may have any one of three states
+		-Pending
+		-Resolved or Fulfilled
+		-Rejected
+
+	A promise object supports two properties state and result
+
+		While a promise is "pending (working)", the result will undefined.
+		When a promise object is "fulfilled", the result is a value
+		When a promise object is "rejected", the result is an error object.
+
+	The Promise() constructor takes a function as an argument. the function also accepts two functions, resolve() and reject().
+	If the promise returns successfully, the resolve() function is called. And, if an error occurs, the reject() function is called.
+
+
+
+Async/Await
+	The async keyword can be used when declearing a function.
+	The await keyword can be used inside our async function and it will await a promise to be resolved.
+		-async and await make promises easier to write
+		-async makes a function return a Promise
+		-await makes a function wait for a Promise
+
+

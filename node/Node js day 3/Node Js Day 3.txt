@@ -1,0 +1,99 @@
+/////////////////////  FS Module   //////////////////
+
+Node.js File System module is used to handle file operations like creating, reading, deleting, etc.
+Node.js provides an inbuilt module called FS (File System)
+
+Approaches:
+Synchronous approach
+Asynchronous approach
+
+
+-----------------------------------------------------------------
+Read File:
+-----------------------------------------------------------------
+
+Synchronous approach
+fs.readFileSync( path, options )
+
+Parameters:  
+
+	path: It takes the relative path of the text file. The path can be of URL type.
+	options: It is an optional parameter which contains the encoding and flag
+
+
+Asynchronous approach:
+fs.readFile( filename, encoding, callback_function )
+
+Parameters: The method accept three parameters as mentioned above and described below:  
+
+	filename:=> It holds the name of the file to read or the entire path if stored at other location.
+	encoding:=> It holds the encoding of file. Its default value is ‘utf8’.
+	callback_function:=> It is a callback function that is called after reading of file. It takes two parameters:
+err: If any error occurred.
+data: Contents of the file.
+Return Value: It returns the contents/data stored in file or error if any.
+
+
+-----------------------------------------------------------------
+Write File:
+-----------------------------------------------------------------
+
+Synchronous approach
+fs.writeFileSync( file, data )
+
+Asynchronous approach:
+fs.writeFile( file, data, callback )
+
+So we have both Synchronous and Asynchronous functions for I/O file operations.
+
+
+-----------------------------------------------------------------
+Some other functions of fs module are:
+-----------------------------------------------------------------
+
+fs.appendFile( path, data, callback )
+fs.appendFileSync( path, data)
+
+fs.exists( path, callback )
+fs.existsSync( path )
+
+fs.mkdir(path, mode, callback)
+fs.mkdirSync( path )
+
+fs.readdir( path , callback )
+fs.readdirSync( path )
+
+fs.rmdir( path, callback )
+fs.rmdirSync( path )
+
+fs.unlink( path, callback )
+fs.unlinkSync( path )
+
+fs.rename( oldPath, newPath, callback )
+fs.renameSync( oldPath, newPath )
+
+fs.stat( path, callback )
+fs.statSync( path )
+
+
+
+/////////////////////  OS MODULE  //////////////////
+
+os (Operating System):
+This module provides many functions that you can use to retrieve information from the 
+operating system and the computer the program runs on, and interact with it.
+--------------------------------------------------------
+EOL, arch, cpus, freemem, totalmem, homedir, hostname, platform, release, tmpdir, uptime, 
+type, userInfo, version, networkInterfaces
+--------------------------------------------------------
+
+
+/////////////////////  Path MODULE  //////////////////
+
+path:
+The path module provides a lot of very useful functionality to access and interact with the paths of file system.
+--------------------------------------------------------
+basename, dirname, extname, format(Returns a path string from an object), parse(Opposite of format),
+join, isAbsolute, resolve
+--------------------------------------------------------
+

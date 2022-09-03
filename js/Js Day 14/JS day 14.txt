@@ -1,0 +1,29 @@
+Calling Third Party API's In Javascript
+
+GEO API
+ http://ip-api.com/json/
+ https://app.ipgeolocation.io
+
+
+JOKES API
+https://backend-omega-seven.vercel.app/api/getjoke
+http://api.icndb.com/jokes/random?firstName=John&lastName=Doe
+
+
+Number Facts Api
+http://numbersapi.com/#42
+
+
+Universities API
+http://universities.hipolabs.com/search?country=pakistan
+
+Tv Shows Api
+https://api.tvmaze.com/search/shows?q=comedy
+
+Random User Api
+https://randomuser.me/api/
+
+Dictionary Api
+https://api.dictionaryapi.dev/api/v2/entries/en/hello
+
+

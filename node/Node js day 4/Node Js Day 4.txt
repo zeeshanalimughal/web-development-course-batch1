@@ -1,0 +1,63 @@
+/////////////////////  http Module   //////////////////
+
+To make HTTP requests in Node.js, there is a built-in module HTTP in Node.js to transfer data over the HTTP.
+To use the HTTP server in the node, we need to require the HTTP module.
+The HTTP module creates an HTTP server that listens to server ports and gives a response back to the client.
+
+METHODS
+STATUS_CODE
+createServer
+listen
+request
+
+req.url
+res.writeHead
+res.end
+
+
+
+/////////////////////  url Module   //////////////////
+
+The ‘url’ module provides utilities for URL 
+
+URL
+parse
+
+
+
+/////////////////////  querystring Module   //////////////////
+
+The Query String module is used as utilities for parsing and formatting URL query strings.
+
+parse
+stringify
+
+
+/////////////////////  dns Module   //////////////////
+
+DNS is a node module used to do name resolution facility which is provided by the operating system as well as used to do an actual DNS lookup.
+
+getServers()
+
+
+lookup()
+The dns.lookup() method is an inbuilt application programming interface of the dns module which is used to resolve 
+IP addresses of the specified hostname for given parameters
+hostname: This parameter specifies a string which denotes the hostname to be resolved.
+
+dns.lookup( hostname, options, callback )
+
+
+resolve()
+used to resolve hostname into an array of the resource records
+dns.resolve( hostname, rrtype, callback )
+rrtype: It specifies the resource record type. Its default value is ‘A’.
+ 
+A: IPv4 address
+AAAA: IPv6 address
+ANY: Any records
+NS: name server records
+...
+
+
+Import/Export Custom Modules

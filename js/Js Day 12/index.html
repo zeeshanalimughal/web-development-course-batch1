@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        const arr = [23, 5, 3, 5, 6, 7, 4, 6, 76]
+        //   const arr2 = [23,5,456,77,8,6,76]
+        // let spread = [...arr,...arr2]
+        // let spread = [...arr]
+
+        //         spread.push(434)
+
+        //   console.log(spread)
+        //   console.log(arr)
+
+
+        // console.log(Math.max(...arr,...arr2))
+        // console.log(Math.min(...arr,...arr2))
+
+        // let unique = new Set(arr);
+        // console.log([...unique])
+
+        let Person = {
+            name: "Zeeshan Ali",
+            age: 22,
+            phone: "38924728934"
+        }
+
+        // let newPerson = {...Person,address:"RYK"}
+        //     let newPerson ={};
+        //       Object.assign(newPerson,Person)
+        //     newPerson.name="Usman"
+        // console.log(Person)
+
+
+
+
+
+        // function count(name,...count){
+        //     console.log(count)
+        // }
+        // console.log(count("Hello",3,4,5,6,4,5,6,6))
+
+        // let {name,phone} = Person
+        // console.log(name,phone)
+
+
+        // let {name,phone} = Person
+        // console.log(name,phone)
+
+        // const [age,,,,age2] = arr
+        // console.log(age2)
+
+
+
+
+        // console.log(1)
+        // setTimeout(function(){
+        //     console.log(2) 
+        // },0)
+        // console.log(3)
+
+
+
+
+
+        // function register(cb) {
+        //     setTimeout(function () {
+        //         console.log("Register")
+        //         cb()
+        //     }, 3000)
+        // }
+        // function sendEmail(cb) {
+        //     setTimeout(function () {
+        //         console.log("Email Send")
+        //         cb()
+        //     }, 2000)
+        // }
+        // function login(cb) {
+        //     setTimeout(function () {
+        //         console.log("Login")
+        //         cb()
+        //     }, 2000)
+        // }
+        // function getUserData() {
+        //     setTimeout(function () {
+        //         console.log("User Data is ready")
+        //     }, 1000)
+        // }
+
+
+         // register(function () {
+        //     sendEmail(function () {
+        //         login(function(){                    
+        //             getUserData()
+        //         })
+        //     })
+        // })
+
+
+
+
+
+
+
+
+        let register = async()=> {
+            setTimeout(function () {
+                return new Promise(function (resolve, reject) {
+                    resolve("Registered")
+                    console.log("Registered")
+                })
+            }, 3000)
+        }
+        let sendEmail = async()=> {
+            setTimeout(function () {
+                return new Promise(function (resolve, reject) {
+                    resolve("Email send")
+                    console.log("Email send")
+                })
+            }, 2000)
+        }
+        let login = async()=> {
+            setTimeout(function () {
+                return new Promise(function (resolve, reject) {
+                    resolve("Login")
+                    console.log("Login")
+                })
+            }, 2000)
+        }
+        let  getUserData = async()=> {
+            setTimeout(function () {
+                return new Promise(function (resolve, reject) {
+                    resolve("Data is ready")
+                    console.log("Data is ready")
+                })
+            }, 1000)
+        }
+
+
+        // register().then((msg)=> {
+        //     console.log(msg)
+        // })
+
+
+
+        function printData(){
+         register()
+        .then(sendEmail())
+        .then(login())
+        .then(getUserData())
+       }
+
+
+       printData()
+
+        // let promise = new Promise(function(resolve, reject){
+        //     const isLoggedIn = true
+        //     if(isLoggedIn) {
+        //         resolve("User is logged in")
+        //     }else{
+        //         reject("Not logged in")
+        //     }
+        // })
+
+        // promise
+        // .then(function(msg){
+        //     console.log(msg)
+        // })
+        // .catch(function(error){
+        //     console.log(error)
+        // })
+        
+
+    </script>
+
+</body>
+
+</html>

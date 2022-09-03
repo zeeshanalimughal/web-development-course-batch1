@@ -1,0 +1,90 @@
+
+Node JS:
+
+Node.js is an extremely powerful framework developed on Chrome’s V8 JavaScript engine that compiles the JavaScript directly into the native machine code. 
+Node.js is an open-source and cross-platform runtime environment built on Chrome’s V8 JavaScript engine for executing JavaScript code outside of a browser.
+You need to recollect that NodeJS isn’t a framework, and it’s not a programing language. It provides an event-driven, non-blocking (asynchronous) I/O and 
+cross-platform runtime environment for building highly scalable server-side applications using JavaScript.
+
+It is written in C, C++ and JavaScript languages
+Used for building fast and scalable server-side networking applications
+Node.js has many different frameworks like Sails.js, Partial.js, and Express.js, etc.
+Node.js also provides a rich library of various JavaScript modules to simplify the development of web applications.
+
+
+
+Node.js is widely used in the following applications:
+
+Real-time chats
+Internet of Things
+Complex SPAs (Single-Page Applications)
+Real-time collaboration tools
+Streaming applications
+
+Install Node.js on Windows
+
+Node js Program Example
+
+Node.js Global Objects:
+Node.js global objects are global in nature and available in all modules. 
+You don't need to include these objects in your application; rather they can be used directly.
+
+__dirname
+__filename
+Console
+Process
+Buffer
+Timing Functions
+
+
+Node Package Manager NPM:
+NPM is the default package manager for Node.js and is written entirely in Javascrip. NPM manages all the 
+packages and modules for Node.js and consists of command line client npm. 
+It gets installed into the system with installation of Node.js. 
+The required packages and modules in Node project are installed using NPM
+
+Check npm installed or not:
+npm -v
+
+package.json file:
+All npm packages contain a file, usually in the project root directory, called package.json - this file holds various metadata relevant to the project
+The dependencies field is used to list all the dependencies of your project that are available on npm. 
+When someone installs your project through npm, all the dependencies listed will be installed as well.
+
+To create package.json file run following command:
+npm init
+
+basic npm commands:
+
+npm install package_name
+npm install package_name --save  // for save in package.json file.
+npm install package_name -g
+npm install package_name --dev
+
+npm update package_name
+npm uninstall package_name
+npm help json
+
+
+
+Node.js Modules
+In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on the 
+basis of their related functionality. Modules can be a single file or a collection of multiples files/folders. 
+
+Modules are of three types:
+	Core Modules
+		Node.js has many built-in modules that are part of the platform and comes with Node.js installation.
+		These modules can be loaded into the program by using the require function.
+
+	local Modules:
+		Unlike built-in and external modules, local modules are created locally in your Node.js application
+
+	Third-party Modules:
+		Third-party modules are modules that are available online using the Node Package Manager(NPM).
+		These modules can be installed in the project folder or globally
+
+
+
+
+
+

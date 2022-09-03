@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+            gap: 2rem;
+            background: #111;
+            flex-wrap: wrap;
+            padding: 4rem;
+        }
+
+        .card {
+            max-width: 250px;
+            width: 100%;
+            min-height: 150px;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            word-break: break-all;
+
+        }
+
+      
+        .popup{
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color:#00000099;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper button{
+            font-size: 20px;
+            outline:none;
+            border: none;
+            background:#111;
+            color:#fff;
+            padding:5px 10px;
+            cursor: pointer;
+            align-self: center;
+        }
+        .box{
+            max-width: 500px;
+            width: 100%;
+            min-height: 200px;
+            background-color:#fff;
+            /* word-wrap: break-word; */
+            word-break: break-all;
+            /* word-wrap: break-word; */
+            padding:2rem;
+            position: relative;
+        }
+        .popup.active{
+            display: flex;
+        }
+        .box .close{
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width:30px;
+            height:30px;
+            border-radius: 50%;
+            font-size: 25px;
+            outline:none;
+            border: none;
+            background:#ff4;
+            color:#fff;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup">
+       
+    </div>
+    <div class="wrapper">
+    </div>
+
+
+    <script src="data.js"></script>
+    <script src="users.js"></script>
+
+    <script>
+        const wrapper = document.querySelector('.wrapper')
+        const popup = document.querySelector('.popup')
+        let i=users.length;
+        users.forEach(function (user,index) {
+            let html = `<div class="card">
+            <h3>${user.email}</h3>
+            <button onclick="openPopup(this)" data-id="${i}">View Profile</button>
+        </div>`;
+            // wrapper.insertAdjacentHTML("afterbegin", html)
+            wrapper.insertAdjacentHTML("afterbegin", html)
+            i--;
+        })
+
+
+       
+
+
+
+        function openPopup(btn){
+           
+
+            const id = +btn.getAttribute('data-id');
+            const user = users.filter(user => {
+            return user.id === id
+            })
+
+            let htmlCode = `
+            <div class="box">
+            ${user[0].name}
+            <button class="close" onclick="closePopup()">X</button>
+            </div>
+            `;
+            popup.innerHTML = htmlCode;
+            popup.classList.add("active")
+        }
+
+
+        function closePopup(){
+            popup.classList.remove("active")
+        }
+        // console.log(user[0].address.street)
+        // console.log(user[0].address.geo.lng)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Call</title>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+
+
+    <script>
+        const API_URL = 'https://fakestoreapi.com/products';
+
+        // fetch(API_URL).then(function(response) {
+        //     return response.json()
+        // }).then(function(result){
+        //     console.log(result)
+        //     result.forEach(data=>{
+        //         data.email = "example@gmail.com"
+        //         console.log(data)
+        //     })
+        // const new_data = result.filter(data=>{
+        //     return data.name.startsWith('C')
+        // })
+        // console.log(new_data)
+        // })
+
+        const container = document.querySelector(".container")
+        function showProducts(products) {
+            products.forEach(product => {
+                let productCard = document.createElement('div');
+                productCard.className = "product-card"
+                productCard.innerHTML =
+                    `<a href="singleProduct.html?id=${product.id}"> <div class="badge">Hot</div>
+                <div class="product-tumb">
+                    <img src="${product.image}" alt="">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">${product.category}</span>
+                    <h4><a href="">${product.title}</a></h4>
+                    <p>${product.description.length > 120 ? product.description.substring(0, 120) + " ..." : product.description}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">$${product.price}</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div> </a>`
+                container.appendChild(productCard)
+            })
+        }
+
+        async function getProducts() {
+            try {
+                const response = await fetch(API_URL)
+                const products = await response.json()
+                console.log(products)
+                showProducts(products)
+            } catch (e) {
+                console.log("Some error occurred: " + e)
+            }
+        }
+        getProducts()
+    </script>
+</body>
+
+</html>

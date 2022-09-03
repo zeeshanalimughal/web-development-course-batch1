@@ -1,0 +1,37 @@
+navigator (appCodeName,appName,appVersion,language,onLine,platform,userAgent)
+
+Window Web API's:
+
+Window.location (host,hostname,origin,pathname,port,protocol , assign(), reload(), replace())
+History(length)
+
+Storage:
+Types -> (localStorage, sessionStorage)
+Methods-> (setItem, getItem, length, key, removeItme, clear)
+
+Geolocation (coordinates, position, getCurrentPosition())
+
+ES6: (let const, arrow functions, default parameters, modules system, )
+
+Set (new Set(), add, delete, has, values)
+Map (new Map(), get, set, delete, has, entries)
+
+Classes and Objects
+Spread and Rest Operator
+Destructuring
+
+Synchronous: As the name suggests synchronous means to be in a sequence, 
+		i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement 
+		to get executed.
+Asynchronous: 
+Asynchronous code allows the program to be executed immediately where the synchronous code 
+will block further execution of the remaining code until it finishes the current one
+
+Promises
+In JavaScript, a promise is just like a promise that you make in real life to show that you are committed to doing something
+
+Async/Await
+async and await make promises easier to write
+async makes a function return a Promise
+await makes a function wait for a Promise
+

@@ -1,0 +1,196 @@
+Node.js Global Objects:
+
+Node.js global objects are global in nature and available in all modules. 
+You don't need to include these objects in your application; rather they can be used directly.
+
+__dirname
+__filename
+Console
+
+Process (
+process.arch
+process.argv
+process.env
+process.uptime
+process.versions
+)
+
+Buffer
+Buffers are instances of the Buffer class in Node.js. Buffers are designed to handle binary raw data.
+Some funciton: (new Bffer(data,encoding-type), alloc, length, includes, indexOf, fill, toString(), toJSON() )
+Timing Functions
+URL (get,getAll,has)
+URLSearchParams
+
+Node Package Manager NPM:
+NPM is the default package manager for Node.js and is written entirely in Javascrip. NPM manages all the 
+packages and modules for Node.js and consists of command line client npm. 
+It gets installed into the system with installation of Node.js. 
+The required packages and modules in Node project are installed using NPM
+
+Check npm installed or not:
+npm -v
+
+package.json file:
+All npm packages contain a file, usually in the project root directory, called package.json - this file holds various metadata relevant to the project
+The dependencies field is used to list all the dependencies of your project that are available on npm. 
+When someone installs your project through npm, all the dependencies listed will be installed as well.
+
+To create package.json file run following command:
+npm init
+
+basic npm commands:
+
+npm install package_name
+npm install package_name --save  // for save in package.json file.
+npm install package_name -g
+npm install package_name --dev
+
+npm update package_name
+npm uninstall package_name
+npm help json
+
+
+-----------------------------------------------------------------
+Node.js Modules
+In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on the 
+basis of their related functionality. Modules can be a single file or a collection of multiples files/folders. 
+
+Modules are of three types:
+	Core Modules
+		Node.js has many built-in modules that are part of the platform and comes with Node.js installation.
+		These modules can be loaded into the program by using the require(module_name) function.
+
+	Local Modules:
+		Unlike built-in and external modules, local modules are created locally in your Node.js application
+
+	Third-party Modules:
+		Third-party modules are modules that are available online using the Node Package Manager(NPM).
+		These modules can be installed in the project folder or globally
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+Core Modules:
+
+List of basic node.js modyles:
+
+fs 		(To handle the file system)
+os 		(Provides information about the operation system)
+path 	(To handle file paths)
+http	(To make Node.js act as an HTTP server)
+query	(To handle URL query strings)
+zlib	(To compress or decompress files)
+
+-----------------------------------------------------------------
+List of Advance node.js modyles:
+
+crypto	(To achive cryptography)
+events	(To handle events)
+dns		(To do DNS lookups and name resolution functions)
+stream	(To handle streaming data)
+
+-----------------------------------------------------------------
+
+
+
+
+/////////////////////  FS Module   //////////////////
+
+Node.js File System module is used to handle file operations like creating, reading, deleting, etc.
+Node.js provides an inbuilt module called FS (File System)
+
+Approaches:
+Synchronous approach
+Asynchronous approach
+
+
+-----------------------------------------------------------------
+Read File:
+-----------------------------------------------------------------
+
+Synchronous approach
+fs.readFileSync( path, options )
+
+Parameters:  
+
+	path: It takes the relative path of the text file. The path can be of URL type.
+	options: It is an optional parameter which contains the encoding and flag
+
+
+Asynchronous approach:
+fs.readFile( filename, encoding, callback_function )
+
+Parameters: The method accept three parameters as mentioned above and described below:  
+
+	filename:=> It holds the name of the file to read or the entire path if stored at other location.
+	encoding:=> It holds the encoding of file. Its default value is ‘utf8’.
+	callback_function:=> It is a callback function that is called after reading of file. It takes two parameters:
+err: If any error occurred.
+data: Contents of the file.
+Return Value: It returns the contents/data stored in file or error if any.
+
+
+-----------------------------------------------------------------
+Write File:
+-----------------------------------------------------------------
+
+Synchronous approach
+fs.writeFileSync( file, data )
+
+Asynchronous approach:
+fs.writeFile( file, data, callback )
+
+So we have both Synchronous and Asynchronous functions for I/O file operations.
+
+
+-----------------------------------------------------------------
+Some other functions of fs module are:
+-----------------------------------------------------------------
+
+fs.appendFile( path, data, callback )
+fs.appendFileSync( path, data)
+
+fs.exists( path, callback )
+fs.existsSync( path )
+
+fs.mkdir(path, mode, callback)
+fs.mkdirSync( path )
+
+fs.readdir( path , callback )
+fs.readdirSync( path )
+
+fs.rmdir( path, callback )
+fs.rmdirSync( path )
+
+fs.unlink( path, callback )
+fs.unlinkSync( path )
+
+fs.rename( oldPath, newPath, callback )
+fs.renameSync( oldPath, newPath )
+
+fs.stat( path, callback )
+fs.statSync( path )
+
+
+
+/////////////////////  OS MODULE  //////////////////
+
+os (Operating System)
+--------------------------------------------------------
+EOL
+arch
+cpus
+freemem
+totalmem
+homedir
+hostname
+platform
+release
+tmpdir
+uptime
+type
+userInfo
+version
+--------------------------------------------------------
+
