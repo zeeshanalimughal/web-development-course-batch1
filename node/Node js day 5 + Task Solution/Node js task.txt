@@ -1,0 +1,28 @@
+Node Js Task:
+
+1-create a folder name users.
+
+
+2-create a file names users.json
+
+
+3-before creating file and folder, check weather it's already exists or not.
+
+
+4-write code to append data into users.json file with basic user information like id, name,email,age,phone and address.
+
+
+5-create a node server and show all users in json format when we type /users in url.
+
+
+6-when you type /add  in url, it should add a new static user data into users.json file and show response message user added successfully.
+
+
+7-when you type /getuser?id={any user id here}  it should return that single user data in response. if user not found show message in response that user not found
+
+
+8-when you type /delete?id={any user id here}  it should delete that user from users.json file and show message user deleted successfully.
+
+
+
+Please submit code files in zip format before monday class.

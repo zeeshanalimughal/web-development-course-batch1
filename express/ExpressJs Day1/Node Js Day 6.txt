@@ -1,0 +1,26 @@
+Node Js Framework
+
+Express Js
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+You can assume express as a layer built on the top of the Node.js that helps manage a server and routes
+
+Installation
+
+Example of Express App
+
+app methods:
+listen, use, get, post, put, delete
+
+Express Routing
+app.METHOD(PATH, HANDLER)
+
+serving static files in express
+express.static()
+
+
+Request:
+baseUrl, host, hostname, ip, method, originalUrl, path, protocol, query, route, subdomains, params, body
+
+Response:
+end, send, status, json

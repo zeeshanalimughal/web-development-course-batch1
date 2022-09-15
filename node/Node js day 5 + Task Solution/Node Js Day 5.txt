@@ -1,0 +1,95 @@
+/////////////////////  CRPTOGRAPHY IN NODE JS   //////////////////
+
+The crypto module handles cryptographic functionality. Cryptography is an important aspect when we deal with network security.
+‘Crypto’ means secret or hidden.
+
+getCiphers()
+returns an array the names of all the supported cipher algorithms
+
+
+getHashes()
+display the names of all the supported hash algorithms in an array
+
+
+
+createHmac( algorithm, key, options )
+used to create an Hmac object that uses the stated ‘algorithm’ and ‘key’
+
+
+randomBytes( size, callback )
+used to generate a cryptographically well-built artificial random data and the number of bytes to be generated in the written code.
+
+
+randomFill()
+randomFillSync()
+same as crypto.randomBytes() method but the only difference is that here the first argument is buffer that will be filled and it 
+also has a callback function passed as an argument.
+
+
+
+scrypt()
+an inbuilt API of crypto module which is used to enable an implementation of an asynchronous scrypt. 
+Where, scrypt is a password-based key derivation function.
+scrypt( password, salt, keylen, callback )
+
+
+
+/////////////////////  Events IN NODE JS   //////////////////
+
+Every action on a computer is an event. Like when a connection is made or a file is opened.
+Node.js has a built-in module, called "Events" and used its method EventEmitter
+
+
+
+
+
+
+/////////////////////  Streams IN NODE JS   //////////////////
+
+Streams are one of the fundamental concepts of Node.js. Streams are a type of data-handling methods and are used to read or write input into output sequentially.
+Streams is one of the most important and difficult topic in Node.js. It comes into play when you're working with a large amount of data
+
+Node.js documentation defines streams as “A stream is an abstract interface for working with streaming data in Node.js.” 
+
+In short, Streams are objects in Node.js that lets the user read data from a source or write data to a destination in a continuous manner.
+
+What makes streams powerful while dealing with large amounts of data is that instead of reading a file into memory all at once, 
+streams actually read chunks of data, processing its content data without keeping it all in memory
+
+
+fs.createReadStream()
+fs.createWriteStream()
+http.request()
+
+
+
+
+
+
+
+Node Js Framework
+
+Express Js
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+You can assume express as a layer built on the top of the Node.js that helps manage a server and routes
+
+Installation
+
+Example of Express App
+
+app methods:
+listen, use, get, post, put, delete
+
+Express Routing
+app.METHOD(PATH, HANDLER)
+
+serving static files in express
+express.static()
+
+
+Request:
+baseUrl, host, hostname, ip, method, originalUrl, path, protocol, query, route, subdomains
+
+Response:
+end, send, status, json

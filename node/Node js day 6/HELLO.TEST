@@ -1,0 +1,14 @@
+const fs = require('fs');
+const server = require('http').createServer(handler);
+function handler(req,res){
+   const stream =  fs.createReadStream('large.txt')
+
+   stream.on("data",function(chunck){
+      res.write(chunck.toString());
+   })
+   stream.on("end",function(){
+      res.end()
+   })
+   stream.on("error",function(err){
+      console.error(err)
+   })

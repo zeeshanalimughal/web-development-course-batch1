@@ -1,0 +1,75 @@
+Middlewares:
+Middleware in Express are functions that come into play after the server receives 
+the request and before the response is sent to the client. They are arranged in a chain and are called in sequence.
+
+Middleware functions take three arguments: the request object (request), the response object (response), 
+and optionally the next() middleware function:
+
+We call app.use() to add a middleware function to our Express application.
+
+app.use(function1)
+app.use(function2)
+
+Express will first execute function1 and then function2.
+
+Types:
+
+Application-level middleware 		which runs for all routes in an app object
+Router level middleware 		which runs for all routes in a router object
+Built-in middleware 			provided by Express like express.static, express.json, express.urlencoded
+Error handling middleware 		for handling errors
+Third-party middleware 			maintained by the community
+
+Using Express' Built-in Middleware
+
+Built-in middleware functions are bundled with Express so we do not need to install any additional modules for using them.
+
+express.static		serves static assets
+express.json		parses JSON payloads
+express.urlencoded	parses URL-encoded payloads
+
+
+Middleware Function to a Route
+
+Understanding The next() Function
+
+The next() function is a function in the Express router that, when invoked, executes the next middleware
+If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next 
+middleware function. Otherwise, the request will be left hanging.
+
+Middleware Function to All Requests
+
+
+Error Handling Middleware:
+Express comes with a default error handler that takes care of any errors that might be encountered in the application. 
+I has one extra parameter called in the middleware function called error.
+
+
+Third-Party Middleware:
+We can also use third-party middleware to add functionality built by the community to our Express applications. 
+These are usually available as npm modules which we install by running the npm install command in our terminal window. 
+
+Examples:
+Morgan
+Helmet
+Cors
+Rate Limit
+Cookie-parser
+Body Parser
+
+
+
+
+
+Express Router:
+A router object is an isolated instance of middleware and routes. You can think of it as a “mini-application,” capable only of performing middleware and routing functions. Every Express application has a built-in app router.
+
+A router behaves like middleware itself, so you can use it as an argument to app.use() or as the argument to another router’s use() method.
+
+The top-level express object has a Router() method that creates a new router object.
+
+router.all(path, callback)
+router.METHOD(path, callback)
+
+
+
